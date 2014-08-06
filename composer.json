@@ -1,0 +1,31 @@
+{
+    "name":        "Polcode/UnitConverterBundle",
+    "type":        "symfony-bundle",
+    "description": "This bundle allows you to manage values in different units by simply command",
+    "keywords":    ["polcode", "debug", "symfony", "bundle", "unit"],
+    "homepage":    "http://github.com/b-sebastian/UnitConverter",
+    "license":     "MIT",
+
+    "authors": [
+        {
+            "name": "Sebastian Bachorczyk",
+            "homepage": "http://github.com/b-sebastian"
+        }
+    ],
+
+    "require": {
+        "php":                      ">=5.3.2",
+        "symfony/framework-bundle": ">=2.5.0",
+        "b-sebastian/UnitConverter":             "dev-master"
+    },
+
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-0": {
+            "Polcode\\UnitConverterBundle": ""
+        }
+    },
+
+    "target-dir": "Polcode/UnitConverterBundle"
+}
