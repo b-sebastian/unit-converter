@@ -22,7 +22,7 @@
 
     "autoload": {
         "psr-0": {
-            "Polcode\\UnitConverterBundle\\": "src/Polcode/UnitConverterBundle"
+            "Polcode\\UnitConverterBundle\\": ""
         }
     }
 }
