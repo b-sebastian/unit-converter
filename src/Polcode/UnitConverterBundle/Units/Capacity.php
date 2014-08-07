@@ -27,16 +27,16 @@ class Capacity
             case 'm3':
                 break;
             case 'in3':
-                $this->value = $value * 1/61023.744;
+                $this->value = $value * 1/61023.744094;
                 break;
             case 'yd3':
-                $this->value = $value * 1/1.308;
+                $this->value = $value * 1/1.307950;
                 break;
             case 'galUK':
-                $this->value = $value * 1/219.969;
+                $this->value = $value * 1/219.969248;
                 break;
             case 'ft3':
-                $this->value = $value * 1/35.315;
+                $this->value = $value * 1/35.314666;
                 break;
             default:
                 throw new \Exception("Unsupported unit");
@@ -55,13 +55,13 @@ class Capacity
             case 'l':
                 return $this->value * 1000;
             case 'in3':
-                return $this->value * 61023.744;
+                return $this->value * 61023.7440947323;
             case 'yd3':
-                return $this->value * 1.308;
+                return $this->value * 1.3079506193;
             case 'galUK':
-                return $this->value * 219.969;
+                return $this->value * 219.9692482991;
             case 'ft3':
-                return $this->value * 35.315;
+                return $this->value * 35.3146667215;
             default:
                 throw new \Exception("Unsupported unit");
         }

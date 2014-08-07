@@ -16,27 +16,28 @@ class Weight
     {
         switch ($unit){
             case 'g':
+                $this->value = $value / 1000;
                 break;
             case 'dag':
-                $this->value = $value * 100;
+                $this->value = $value / 100;
                 break;
             case 'kg':
-                $this->value = $value * 1000;
+                $this->value = $value;
                 break;
             case 't':
-                $this->value = $value * 1000000;
+                $this->value = $value * 1000;
                 break;
             case 'oz':
-                $this->value = $value * 28.35;
+                $this->value = $value / 35.273369;
                 break;
             case 'lb':
-                $this->value = $value * 453.5;
+                $this->value = $value / 2.204623;
                 break;
-            case 'qr':
-                $this->value = $value * 12700;
+            case 'tUK':
+                $this->value = $value / 0.000984;
                 break;
-            case 'cwt':
-                $this->value = $value * 50802;
+            case 'cwtUK':
+                $this->value = $value / 0.019684;
                 break;
             default:
                 throw new \Exception("Unsupported unit");
@@ -47,21 +48,21 @@ class Weight
     {
         switch ($unit){
             case 'g':
-                return $this->value;
+                return $this->value * 1000;
             case 'dag':
-                return $this->value / 100;
+                return $this->value * 100;
             case 'kg':
-                return $this->value / 1000;
+                return $this->value;
             case 't':
-                return $this->value / 1000000;
+                return $this->value  / 1000;
             case 'oz':
-                return $this->value / 28.35;
+                return $this->value * 35.273369;
             case 'lb':
-                return $this->value / 453.5;
-            case 'qr':
-                return $this->value / 12700;
-            case 'cwt':
-                return $this->value / 50802;
+                return $this->value * 2.204623;
+            case 'tUK':
+                return $this->value * 0.000984;
+            case 'cwtUK':
+                return $this->value * 0.019684;
             default:
                 throw new \Exception("Unsupported unit");
         }
