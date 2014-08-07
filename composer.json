@@ -1,6 +1,5 @@
 {
     "name":        "polcode/unit-converter-bundle",
-    "type":        "symfony-bundle",
     "description": "This bundle allows you to manage values in different units by simply command",
     "keywords":    ["polcode", "debug", "symfony", "bundle", "unit"],
     "homepage":    "http://github.com/b-sebastian/UnitConverter",
