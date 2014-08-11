@@ -12,16 +12,24 @@ class CapacityTest extends \PHPUnit_Framework_TestCase
     public function testToUnit($v,$u,$u2,$e)
     {
         $t = new Capacity($v,$u);
-        $this->assertEquals($e,$t->toUnit($u2));
+        $this->assertEquals($e,round($t->toUnit($u2),4));
     }
     
     public function additionProvider()
     {
         return array(
             array(2000000, 'cm3', 'm3', 2),
-            array(2000, 'mm3', 'ft3', 0.000070629333443),
-            array(2646, 'l', 'yd3', 3.4608373386678),
-            array(4231, 'ft3', 'yd3', 156.70370690348),
+            array(2000, 'mm3', 'ft3', 0.0001),
+            array(2646, 'l', 'yd3', 3.4608),
+            array(4231, 'ft3', 'yd3', 156.7037),
+            array(4231, 'm3', 'mm3', 4231000000000),
+            array(4231, 'in3', 'cm3', 69333.6678),
+            array(4231, 'yd3', 'l', 3234833.1358),
+            array(4231, 'galUK', 'in3', 1173761.6217),
+            array(4231, 'fsst3', 'yd3', 156.70370690348),
+            array(4231, 'fsst3', 'asdasd', 156.70370690348),
+            array(4231, 'ft3', 'galUK', 26354.2034),
+            array(4231, 'ft3', 'gsdfd', 26354.2034)
         );
     }
 }

@@ -19,9 +19,12 @@ class ByteTest extends \PHPUnit_Framework_TestCase
     {
         return array(
             array(2048, 'B', 'KB', 2),
-            array(2097152, 'B', 'MB', 2),
-            array(2048, 'MB', 'GB', 2),
             array(2, 'GB', 'MB', 2048),
+            array(2048, 'MB', 'GB', 2),
+            array(2147483648, 'KB', 'TB', 2),
+            array(2, 'TB', 'B', 2199023255552),
+            array(2, 'asda', 'MB', 2048),
+            array(2, 'MB', 'asd', 2048)            
         );
     }
 }

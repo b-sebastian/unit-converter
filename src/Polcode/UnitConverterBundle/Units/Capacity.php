@@ -25,6 +25,7 @@ class Capacity
                 $this->value = $value * 0.001;
                 break;
             case 'm3':
+                $this->value = $value;
                 break;
             case 'in3':
                 $this->value = $value * 1/61023.744094;

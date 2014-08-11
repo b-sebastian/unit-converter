@@ -37,7 +37,7 @@ class Weight
                 $this->value = $value / 0.000984;
                 break;
             case 'cwtUK':
-                $this->value = $value / 0.019684;
+                $this->value = $value / 0.019680;
                 break;
             default:
                 throw new \Exception("Unsupported unit");

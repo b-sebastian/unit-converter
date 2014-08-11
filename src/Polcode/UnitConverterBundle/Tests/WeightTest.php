@@ -22,6 +22,12 @@ class WeightTest extends \PHPUnit_Framework_TestCase
             array(2000, 'kg', 't', 2),
             array(2646, 'kg', 'oz', 93333.33),
             array(2655, 'lb', 'cwtUK', 23.71),
+            array(200, 'dag', 'g', 2000),
+            array(2, 't', 'dag', 200000),
+            array(2646, 'oz', 'lb', 165.38),
+            array(2655, 'tUK', 'tUKss', 23.71),
+            array(2000, 'cwtUK', 'tUK', 100),
+            array(2000, 'kgsss', 't', 2)
         );
     }
 }
