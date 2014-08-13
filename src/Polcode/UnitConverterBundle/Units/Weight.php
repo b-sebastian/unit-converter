@@ -40,7 +40,7 @@ class Weight
                 $this->value = $value / 0.019680;
                 break;
             default:
-                throw new \Exception("Unsupported unit");
+                throw new \Exception("Unsupported unit '{$unit}'");
         }
     }
     

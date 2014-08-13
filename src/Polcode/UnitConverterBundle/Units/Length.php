@@ -2,7 +2,7 @@
 
 namespace Polcode\UnitConverterBundle\Units;
 
-class Lenght
+class Length
 {
     // default value is always typed as metre
     protected $value;
