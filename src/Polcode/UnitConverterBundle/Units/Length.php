@@ -16,6 +16,7 @@ class Length
     {
         switch ($unit){
             case 'm':
+                $this->value = $value;
                 break;
             case 'km':
                 $this->value = $value * 1000;
